@@ -26,8 +26,13 @@ print(mot1, mot2, mot3, mot4, mot5, mot6, mot7, mot8, mot9,mot10)
 print(tableau)
 
 #Définition
+def tableaujoueur(tableau_mystere, tableau_joueur):
+    for i in range (1,7):
+        tableau_joueur[i-1] = input("inscrivez votre mot :")
+    return tableau_joueur
+
 def gagner(tableau, tableau_mystere):
-	if tableau == tableau_mystere
+	if (tableau_joueur[i-1] = tableau_joueur[1])
 	print ("Trouvé !!")
 	pass
 
@@ -38,7 +43,7 @@ def perdu(tableau,tableau_mystere):
 
 
 def retry(tableau, tableau_mystere):
-	if tableau != tableau_mystere:
+	if tableau_joueur != tableau_mystere[1] and tableau_mystere[2] and tableau_mystere[3] and tableau_mystere[4] and tableau_mystere[5] and tableau_mystere[6]:
 		tour += 1
 		print("essaie encore, vous êtes au tour :",tour)
 		pass
