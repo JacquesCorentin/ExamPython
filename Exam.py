@@ -28,7 +28,7 @@ tableau_mystere = ["c","i","t","r","o","n"]
 tableau_joueur = ["_","_","_","_","_","_"]
 print(mot1, mot2, mot3, mot4, mot5, mot6, mot7, mot8, mot9,mot10)
 print(tableau)
-print("vous avez 8 tours pour trouver la solution, vous êtes au tour :" tour)
+print("vous avez 8 tours pour trouver la solution, vous êtes au tour :",tour)
 
 #Début de code
 def tableaujoueur(tableau_mystere, tableau_joueur):
@@ -36,18 +36,16 @@ def tableaujoueur(tableau_mystere, tableau_joueur):
         tableau_joueur[i-1] = input("inscrivez votre mot :")
     return tableau_joueur
 
-def choixdecaractere (tableau_mystere, tableau_joueur, verif)
+def choixdecaractere (tableau_mystere, tableau_joueur, verif):
     for i in range (1,7):
         if tableau_joueur != tableau_mystere:
             verif = 2
         if tableau_joueur[i-1] != tableau_mystere[1] and tableau_mystere[2] and tableau_mystere[3] and tableau_mystere[4] and tableau_mystere[5] and tableau_mystere[6]:
             verif = 1
-        if verif = 2 : 
+        if verif == 2 : 
         	tour += 1
-            print("Try again")
-            print ("vous êtes au tour :" tour)
-    return
-
+            print ("essaie encore, vous êtes au tour :", tour)
+    
 
 def gagner(tableau_mystere, tableau_joueur):
 	for i in range (1,7):
